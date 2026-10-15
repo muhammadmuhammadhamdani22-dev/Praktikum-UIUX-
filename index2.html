@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Pemesanan Barang</title>
+</head>
+<body>
+
+    <!-- Menu Navigasi / Header Web Page -->
+    <p>A Web Page</p>
+    <p>
+        <a href="#">Home</a> | 
+        <a href="#">Register</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">About</a>
+    </p>
+    <hr>
+
+    <!-- Tabel Utama Layout: Kolom Kiri (Gambar) & Kolom Kanan (Hasil Data) -->
+    <table border="0" cellpadding="10" cellspacing="0" valign="top">
+        <tr valign="top">
+            
+            <!-- KOLOM KIRI: Gambar Placeholder -->
+            <td align="center" width="200">
+                <table border="1" width="150" height="150">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h1>X</h1>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- KOLOM KANAN: Detail Informasi / Rincian -->
+            <td>
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td><label>Title Here :</label></td>
+                        <td>MacBook Air E800</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><label>Description :</label></td>
+                        <td>
+                            Year : 2009<br>
+                            Model :<br>
+                            Condition : Mint
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Total Amount :</label></td>
+                        <td>&pound;800</td>
+                    </tr>
+                    <tr>
+                        <td><label>Pay to :</label></td>
+                        <td>123-456-789-0</td>
+                    </tr>
+                    <tr>
+                        <td><label>Payment Type :</label></td>
+                        <td>
+                            <select name="payment_type">
+                                <option value="visa_debit" selected>Visa Debit</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Account Holder :</label></td>
+                        <td><input type="text" name="account_holder" value="Name Here"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Account No :</label></td>
+                        <td><input type="text" name="account_no" value="123-456-789-0"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="res_mobile" checked> Send to Mobile Phone<br>
+                            <input type="checkbox" name="res_email" checked> Email me copy of transaction
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Send to Mobile Phone :</label></td>
+                        <td><input type="text" name="res_mobile_num" value="1234567890, 1234567891" size="35"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Send to Email :</label></td>
+                        <td><input type="text" name="res_email_addr" value="mfmmiig13@aston.ac.uk, fyx_06@yahoo.com" size="35"></td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+    <!-- Tombol Submit di Tengah Bawah -->
+    <br>
+    <p align="center">
+        <input type="submit" value="Pay using QwikLink">
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <!-- Menu Navigasi / Header Web Page -->
+    <p>A Web Page</p>
+    <p>
+        <a href="#">Home</a> | 
+        <a href="#">Generate Link</a> | 
+        <a href="#">Transaction History</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">Logout</a>
+    </p>
+    <hr>
+
+    <!-- Form Pemesanan Barang -->
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- Tabel Utama Layout: Kolom Kiri (Gambar) & Kolom Kanan (Form) -->
+        <table border="0" cellpadding="10" cellspacing="0" valign="top">
+            <tr valign="top">
+                
+                <!-- KOLOM KIRI: Upload Gambar -->
+                <td align="center" width="200">
+                    <table border="1" width="150" height="150">
+                        <tr>
+                            <td align="center" valign="middle">
+                                <h1>X</h1>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="file" name="upload_picture">
+                </td>
+
+                <!-- KOLOM KANAN: Data-data Pemesanan -->
+                <td>
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><label>Title Here :</label></td>
+                            <td><input type="text" name="title" value="MacBook Air E800" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label>Description :</label></td>
+                            <td>
+                                <textarea name="description" rows="5" cols="28">Year : 2009
+
+Model :
+
+Condition : Mint</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Account Number :</label></td>
+                            <td><input type="text" name="account_number" value="123-456-789-0"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Bank :</label></td>
+                            <td>
+                                <select name="bank">
+                                    <option value="HSBC" selected>HSBC</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Account Holder :</label></td>
+                            <td><input type="text" name="account_holder" value="Name Here"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Transaction :</label></td>
+                            <td>
+                                <select name="transaction">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                                <br>
+                                <small>* If the transaction is for 3 person, choose 3 from the drop-down list</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="send_mobile" checked> Send to Mobile Phone<br>
+                                <input type="checkbox" name="send_email" checked> Send to Email
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Send to Mobile Phone :</label></td>
+                            <td><input type="text" name="mobile_number" value="1234567890, 1234567891" size="35"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Send to Email :</label></td>
+                            <td><input type="text" name="email_address" value="mfmmiig13@aston.ac.uk, fyx_06@yahoo.com" size="35"></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+
+        <!-- Tombol Submit di Tengah Bawah -->
+        <br>
+        <p align="center">
+            <input type="submit" value="Generate Web Link">
+        </p>
+    </form>
+
+</body>
+</html>
