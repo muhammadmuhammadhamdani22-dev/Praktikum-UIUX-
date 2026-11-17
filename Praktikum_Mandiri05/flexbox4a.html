@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 8a</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { display: flex; min-height: 100vh; font-size: 20px; }
+        nav { width: 20%; background-color: #ffc1cb; padding: 20px; }
+        .right-wrapper { width: 80%; display: flex; flex-direction: column; }
+        header, footer { height: 15vh; background-color: #ece68a; padding: 20px; }
+        .middle-section { display: flex; flex: 1; }
+        article { width: 75%; background-color: #ffffff; padding: 20px; }
+        aside { width: 25%; background-color: #00f0ff; padding: 20px; }
+    </style>
+</head>
+<body>
+    <nav>Nav</nav>
+    <div class="right-wrapper">
+        <header>Header</header>
+        <div class="middle-section">
+            <article>Article</article>
+            <aside>Aside</aside>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

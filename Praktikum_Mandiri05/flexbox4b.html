@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 8b</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #ffa6b3;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            min-height: 100vh;
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+        }
+        header, footer {
+            background-color: #8ccbc6;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container { display: flex; gap: 15px; flex: 1; }
+        aside {
+            width: 30%;
+            background-color: #5ca8ab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        article {
+            width: 70%;
+            background-color: #f47275;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+        .image-group {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .img-placeholder {
+            background-color: #cccccc;
+            height: 140px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="container">
+        <aside>Aside</aside>
+        <article>
+            <div>Article</div>
+            <div class="image-group">
+                <div class="img-placeholder">Image</div>
+                <div class="img-placeholder">Image</div>
+                <div class="img-placeholder">Image</div>
+            </div>
+        </article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
