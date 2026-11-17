@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.row-atas, .row-bawah {
+    display: flex;
+    gap: 10px;
+}
+
+.row-atas img {
+    width: 33.33%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.row-bawah img {
+    width: 25%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #333;
+}
