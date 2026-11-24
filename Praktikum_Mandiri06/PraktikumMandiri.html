@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum JavaScript</title>
+</head>
+<body>
+  <h2>Praktikum Basic JavaScript</h2>
+  <p>Lihat hasil melalui Console (F12).</p>
+  <script>
+    // TULIS KODE DI SINI
+  </script>
+</body>
+</html>
+
+    <script>
+        //Output Variabel dan Tipe Data (modifikasi)
+        const nama = "Hamdani";
+        let umur = 19;
+        let nilai = 85;
+        let aktif = true;
+        const prodi = "Teknik Informatika";
+
+        console.log("Nama:", nama);
+        console.log("Umur:", umur);
+        console.log("Nilai:", nilai);
+        console.log("Status aktif:", aktif);
+        console.log("Prodi:", prodi);
+        console.log("Tipe nilai:", typeof nilai);
+
+       // Operator dan Perhitungan Sederhana
+        const tugas = 80;
+        const uts = 75;
+        let uas = 50; // Diubah dari 90 menjadi 50
+
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+        console.log("Nilai akhir:", akhir); // 80*0.3 + 75*0.3 + 50*0.4 = 24 + 22.5 + 20 = 66.5
+        console.log("Lulus:", akhir >= 60); // true
+
+        // Contoh penggunaan operator +, -, *, /, dan %
+        console.log("Penjumlahan (+):", tugas + uts);
+        console.log("Pengurangan (-):", uts - uas);
+        console.log("Perkalian (*):", tugas * 2);
+        console.log("Pembagian (/):", akhir / 2);
+        console.log("Modulo (%):", uas % 6);
+
+        //Percabangan if, else, if, else
+        function cekKategori(nilai) {
+        let kategori;
+        if (nilai >= 85) {
+        kategori = "A";
+        }
+        else if (nilai >= 70) {
+        kategori = "B";
+        } 
+        else if (nilai >= 60) {
+        kategori = "C";
+        } 
+        else {
+        kategori = "D";
+        }
+
+        console.log("Nilai:", nilai, "-> Kategori:", kategori);
+        }
+
+        cekKategori(92); // A
+        cekKategori(65); // C
+        cekKategori(45); // D
+
+        //PraktikumMandiri
+        const namaMahasiswa = "Muhammad Hamdani";
+        const nilaiTugas = 80;
+        const nilaiUTS = 70;
+        const nilaiUAS = 90;
+
+        const nilaiAkhir = (nilaiTugas * 0.30) + (nilaiUTS * 0.30) + (nilaiUAS * 0.40);
+        const statusKelulusan = nilaiAkhir >= 60 ? "LULUS" : "TIDAK LULUS";
+
+        console.log("Nama Mahasiswa:", namaMahasiswa);
+        console.log("Nilai Akhir", nilaiAkhir);
+        console.log("Status Kelulusan", statusKelulusan);
+        
+    </script>
+    
+</body>
+</html>
